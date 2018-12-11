@@ -75,8 +75,13 @@ WSGI_APPLICATION = 'nypd.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dcpq4gih9pqerc',
+        'HOST': 'ec2-54-83-197-230.compute-1.amazonaws.com',
+        'PORT': '5432',
+        'USER': 'uvodviagyszvmm',
+        'PASSWORD': 'f6c1781ceb204783db2de9dd3dd3d5b8ad1fcb5b3ffb6972413ad5a0815152ff',
+        'URI': 'postgres://uvodviagyszvmm:f6c1781ceb204783db2de9dd3dd3d5b8ad1fcb5b3ffb6972413ad5a0815152ff@ec2-54-83-197-230.compute-1.amazonaws.com:5432/dcpq4gih9pqerc',
     }
 }
 
